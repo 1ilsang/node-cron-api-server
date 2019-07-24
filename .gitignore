@@ -1,0 +1,6 @@
+dist/
+node_modules/
+scheduled-task/
+**/config/*
+.idea/
+.DS_Store/
