@@ -6,14 +6,15 @@
   "scripts": {
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "dev": "npm run lint && tsc && nodemon dist/index.js",
-    "start": "tsc && nodemon dist/index.js"
+    "start": "tsc && node dist/index.js"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/1ilsang/node-cron-api-server"
   },
   "keywords": [
-    "cron", "api"
+    "cron",
+    "api"
   ],
   "author": "1ilsang",
   "license": "MIT",
@@ -28,7 +29,7 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.0",
-    "@types/node-cron": "^2.0.2",
-    "@types/mysql2": "github:types/mysql2"
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node-cron": "^2.0.2"
   }
 }

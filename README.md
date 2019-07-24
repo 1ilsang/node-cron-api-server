@@ -1,5 +1,6 @@
 #Node.js Cron job practice
 
+This is simple node-cron job practice API server.
 
 Overview
 ---

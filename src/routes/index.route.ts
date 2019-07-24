@@ -14,8 +14,6 @@ router.post('/job', job.post);
 
 router.put('/job/:seq', job.put);
 
-// router.delete('/job/:seq', job.delete);
-
-// router.all('/*', ((req, res, next) => next()));
+router.delete('/job/:seq', job.delete);
 
 export default router;
