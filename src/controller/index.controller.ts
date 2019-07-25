@@ -37,8 +37,9 @@ export class job {
 
     public static post = async (req: Request, res: Response, next: NextFunction): Promise<Response> => {
         try {
-            await IndexService.createJob(req);
-            return res.status(200).send('INSERT JOB SUCCESS!');
+            const ret = await IndexService.createJob(req);
+            if(ret) return res.status(200).send('INSERT JOB SUCCESS!');
+            else return res.status(400).send('INSERT JOB Fail - Cron');
         } catch (e) {
             let err = new Error('INSERT JOB fail') as IError;
             err.status = 400;

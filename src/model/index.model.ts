@@ -3,7 +3,6 @@ import {Mysql as mysql} from '../util/database.util';
 
 export class IndexModel {
     public static getJobList = async (seq: number): Promise<IJob[]> => {
-        // FIXME limit 로 가져오는게 최신이 아닐 수 있음. e.x) update 로 runtime 시간을 변경할 경우.
         const SQL = `
             SELECT      *
             FROM        job
